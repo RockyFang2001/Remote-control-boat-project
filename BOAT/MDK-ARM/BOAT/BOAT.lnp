@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"boat\startup_stm32f103xb.o"
+"boat\dht11.o"
+"boat\atgm336.o"
+"boat\hc_sr04.o"
+"boat\main.o"
+"boat\stm32f1xx_it.o"
+"boat\stm32f1xx_hal_msp.o"
+"boat\stm32f1xx_hal_gpio_ex.o"
+"boat\stm32f1xx_hal_tim.o"
+"boat\stm32f1xx_hal_tim_ex.o"
+"boat\stm32f1xx_hal.o"
+"boat\stm32f1xx_hal_rcc.o"
+"boat\stm32f1xx_hal_rcc_ex.o"
+"boat\stm32f1xx_hal_gpio.o"
+"boat\stm32f1xx_hal_dma.o"
+"boat\stm32f1xx_hal_cortex.o"
+"boat\stm32f1xx_hal_pwr.o"
+"boat\stm32f1xx_hal_flash.o"
+"boat\stm32f1xx_hal_flash_ex.o"
+"boat\stm32f1xx_hal_exti.o"
+"boat\stm32f1xx_hal_uart.o"
+"boat\system_stm32f1xx.o"
+--strict --scatter "BOAT\BOAT.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BOAT.map" -o BOAT\BOAT.axf
